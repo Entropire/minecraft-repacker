@@ -14,8 +14,6 @@ pub fn repack(pack_path: &str, target_version: &str) -> Result<(), Box<dyn Error
 
     let pack_data = PackData::from_file(&path)?;
 
-    println!("{:?}", versions.pack_formats);
-    println!("{}", pack_data.description);
 
     Ok(())
 }
